@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <style>
+        /* * {
+            border: 1px black solid;
+        } */
+        body {
+            background-color: white;
+        }
+
+        #top {
+            margin: 0 0;
+            width: 100%;
+            height: 600px;
+            /* border-bottom: 2px solid skyblue; */
+            background-image: url("img/9.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        #top .headurl {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            float: right;
+            margin: 350px 100px 0px 0;
+        }
+
+        #top #name {
+            display: inline-block;
+            margin: 400px 0 10% 100px;
+        }
+
+        #top #name p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #top #name p:nth-child(1) {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #top #name p:nth-child(2) {
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+        }
+
+
+        #content {
+            margin: 50px auto;
+            width: 90%;
+            height: 600px;
+        }
+
+        .up {
+            margin-bottom: 10px;
+            line-height: 60px;
+            font-size: 25px;
+            font-weight: lighter;
+            /* color: rgb(0, 183, 255); */
+            color: #427878;
+            /* border-bottom: 2px skyblue dashed; */
+            border-bottom: 2px #427878 dashed;
+            height: 60px;
+            /* text-align: center; */
+        }
+
+        .up img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .up span {
+            vertical-align: middle;
+        }
+
+        #introduce {
+            width: 40%;
+            padding: 30px;
+            background: white;
+            float: left;
+            margin-left: 30px;
+        }
+
+        #introduct #word {
+            background-color: aquamarine;
+            margin-top: 20px;
+        }
+
+        #skill {
+            padding: 30px;
+            background: white;
+            margin-left: 50%;
+        }
+
+        #skill #word ol li {
+            line-height: 150%;
+        }
+
+        #experience {
+            padding: 30px;
+            background: white;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        #experience ol {
+            padding: 0;
+        }
+
+        #experience ol li p {
+            font-size: large;
+        }
+
+        .card {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        }
+
+        .card:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <div id="name">
+            <p>黄冠翰</p>
+            <p>Henry</p>
+        </div>
+        <img class="headurl" src="http://20200514.oss-cn-shenzhen.aliyuncs.com/dev/images/20200605_23514955.jpg">
+    </div>
+    <div id="content">
+        <div id="introduce" class="card">
+            <div class="up">
+                <img src="img/image-6.png" alt="">
+                <span>个人简介</span>
+            </div>
+            <div id="word">
+                男 22岁 本科 | 学生
+                <br>
+                联系方式: 13531915996 838537276@qq.com
+                <br>
+                身份证：445281199911076791
+                <br>
+                籍贯：广东省揭阳市 政治面貌：群众 <br> <br>
+                科班生，学习能力较强。有上进心，java基础较强。学习成绩不错，喜欢与一个项目组或者团队的成员交流。心态较好，不怕困难，坚信自己的能力有办法解决各种困难
+            </div>
+        </div>
+
+        <div id="skill" class="card">
+            <div class="up">
+                <img src="img/image-7.png" alt="">
+                <span>技能列表</span>
+            </div>
+            <div id="word">
+                <ol>
+                    <li>掌握java基础知识,对多线程、java集合及其基本原理有一定的了解</li>
+                    <li>掌握计算机网络、数据结构、算法、操作系统、Linux等基础知识</li>
+                    <li>掌握Spring、SpringMvc、mybatis、SpringBoot的使用以及整合,了解SpringCloud、Eureka、Hystrix的使 用，对微服务架构有所了解。</li>
+                    <li>了解关系型数据库 mysql 的使用，mysql的索引和引擎，以及非关系型数据库 redis 的使用。</li>
+                    <li>了解Golang的基本语法和使用。</li>
+                    <li>了解rabbitMQ等服务中间件的使用，了解Netty的使用,了解docker使用。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="experience" class="card">
+            <div class="up">
+                <img src="img/image-8.png" alt="">
+                <span>项目经历</span>
+            </div>
+            <ul>
+                <li>
+                    <p>智慧教学平台</p>
+                    SpringBoot2.1+mysql+Redis<br>
+                    一个实验教学平台，分教师端和学生端，教师端发布实验任务为实验结果打分，学生端完成实验任务，并提交结果。在此项目我完成了学生端的后台代码编写，使用了MQ来进行数据库异步操作。
+                </li>
+                <li>
+                    <p>仿饿了么点餐系统项目</p>
+                    SpringBoot2.1+mysql+Redis<br>
+                    一个微信点餐项目，买家端完成浏览商品下单，卖家端对商品、订单进行管理。在此项目我完成了后台系统代码的编写，使用了Redis来进行分布式锁和缓存与登录校验。
+                </li>
+                <li>
+                    <p>仿饿了么点餐（微服务版本)</p>
+                    SpringCloud Eureka Zuul rabbitMQ Hystrix<br>
+                    该项目是上一个项目的微服务版本，我对原有的代码进行改写，将原有的项目拆分为多个独立服务，采用了Netfix的技术套，服务注册采用Eureka、服务调用采用Feign，并使用Hystrix实现了服务的可靠性。
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- 清除一下浮动 -->
+    </div>
+</body>
+
+</html>
